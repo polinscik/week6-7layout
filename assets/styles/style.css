@@ -1,22 +1,31 @@
 html {
     background-color: #fffcf5;
 }
-
-body {
-    width: 100vw;
+header,
+.info-card {
+    font-family: "Poppins", sans-serif;
 }
 .header__back {
     display: grid;
-    grid-template-columns: 8.8em 20.5% 8.2% 1fr 8.9em;
-    grid-template-rows: 6.78em 1fr 3.4em;
-    background: linear-gradient(178.18deg, #fffbf0 4.22%, #f7e6cc 98.53%);
+    grid-template-columns: 8.82% 14.8% 8.2% 47.26% 12.1% 8.82%;
+    grid-template-rows: 6.78em 1fr;
+    background: linear-gradient(
+        178.18deg,
+        hsl(44, 100%, 97%) 4.22%,
+        #f7e6cc 98.53%
+    );
     box-shadow: 0px 5px 26px #dd8762;
+    height: 100vh;
+    border-bottom-right-radius: 114% 14%;
+    border-bottom-left-radius: 114% 14%;
 }
 
 .worldimg {
     grid-column: 2/5;
     grid-row: 2/3;
+    width: 100%;
 }
+
 .header__back img:nth-child(3) {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -28,12 +37,12 @@ nav {
     grid-row: 1/2;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 3.8em;
     flex-wrap: wrap;
 }
 nav a {
     display: block;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: black;
@@ -55,36 +64,36 @@ nav a:last-child {
     padding: 0.3em;
 }
 .frontpage {
-    grid-column: 2/5;
+    grid-column: 2/6;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 10% 1fr 10% 1fr 10%;
-    grid-template-rows: 10% 10% 1fr;
-    width: fit-content;
+    flex-shrink: 1;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-rows: 8.7% 8.7% 82.6%;
+    width: 100%;
+    max-height: 40vh;
 }
 .frontpage section {
     grid-column: 2/3;
     grid-row: 3/4;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .frontpage img:last-child {
     grid-column: 4/5;
     grid-row: 2/4;
+    width: 100%;
 }
 .frontpage section h1 {
     padding-top: 0.3em;
     flex-basis: fit-content;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2.6em;
     line-height: 126%;
     color: #455a64;
 }
 .frontpage section p:nth-child(2) {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1em;
     line-height: 146.69%;
@@ -96,11 +105,9 @@ nav a:last-child {
     margin-top: 2em;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 .learnmore a:first-child {
     padding: 0.7em 1.65em;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     line-height: 146.69%;
     color: #f3fcff;
@@ -112,7 +119,6 @@ nav a:last-child {
     padding: 0.5em;
 }
 .learnmore a:nth-child(3) {
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     line-height: 146.69%;
     text-decoration: none;
@@ -120,11 +126,9 @@ nav a:last-child {
 }
 .addinfo {
     display: flex;
-    flex-wrap: wrap;
 }
 .addinfo p {
     margin: 2em 0.5em;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 0.8em;
@@ -139,12 +143,11 @@ nav a:last-child {
     gap: 2.3vw;
 }
 .info-card article {
-    width: 25vw;
+    max-width: 25vw;
     min-height: 25vh;
     background: linear-gradient(300.2deg, #f5f2eb 1.26%, #f7e6cb 100.49%);
     box-shadow: 5px 5px 13px #dd8762;
     border-radius: 3.5vh;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 146.7%;
