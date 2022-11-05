@@ -1,11 +1,28 @@
 html {
     background-color: #fffcf5;
 }
-header,
-.info-card {
+
+.image {
+    width: 100%;
+}
+.text_large {
+    font-weight: 700;
+    font-size: 2.6em;
+    line-height: 126%;
+    color: #455a64;
+}
+.text_regular {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 146.69%;
+    letter-spacing: 0.03em;
+    color: #535359;
+}
+.header,
+.main {
     font-family: "Poppins", sans-serif;
 }
-.header__back {
+.header {
     display: grid;
     grid-template-columns: 8.82% 14.8% 8.2% 47.26% 12.1% 8.82%;
     grid-template-rows: 6.78em 1fr;
@@ -20,50 +37,20 @@ header,
     border-bottom-left-radius: 114% 14%;
 }
 
-.worldimg {
+.header__background {
     grid-column: 2/5;
     grid-row: 2/3;
-    width: 100%;
 }
 
-.header__back img:nth-child(3) {
+.header__logo {
     grid-column: 2/3;
     grid-row: 1/2;
     align-self: flex-end;
     justify-self: flex-end;
 }
-nav {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 3.8em;
-    flex-wrap: wrap;
-}
-nav a {
-    display: block;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;
-}
-nav a:nth-of-type(odd) {
-    margin-left: 1em;
-}
-nav a:nth-of-type(even) {
-    margin-left: 0.4em;
-    margin-bottom: 0.4em;
-}
-#pricing {
-    margin-left: 1em;
-    margin-bottom: 0;
-}
-nav a:last-child {
-    border: 3px solid #fe9563;
-    border-radius: 5px;
-    padding: 0.3em;
-}
-.frontpage {
+
+.header__intro,
+.intro-page {
     grid-column: 2/6;
     grid-row: 2/3;
     display: grid;
@@ -73,107 +60,195 @@ nav a:last-child {
     width: 100%;
     max-height: 40vh;
 }
-.frontpage section {
+.intro-page__content {
     grid-column: 2/3;
     grid-row: 3/4;
     display: flex;
     flex-direction: column;
 }
 
-.frontpage img:last-child {
+.intro-page__art {
     grid-column: 4/5;
     grid-row: 2/4;
-    width: 100%;
 }
-.frontpage section h1 {
-    padding-top: 0.3em;
-    flex-basis: fit-content;
+.intro-page__text {
     font-weight: 700;
-    font-size: 2.6em;
-    line-height: 126%;
+    line-height: 146.69%;
     color: #455a64;
 }
-.frontpage section p:nth-child(2) {
-    font-weight: 500;
-    font-size: 1em;
-    line-height: 146.69%;
-    letter-spacing: 0.03em;
-    color: #535359;
+
+.intro-content__text_large {
+    padding-top: 0.3em;
+    flex-basis: fit-content;
+}
+.intro-content__text_regular {
     margin: 0;
 }
-.learnmore {
+.intro-content__more {
     margin-top: 2em;
     display: flex;
     align-items: center;
 }
-.learnmore a:first-child {
+.more-content__link {
+    text-decoration: none;
+}
+.more-content__link_btn {
     padding: 0.7em 1.65em;
-    font-weight: 700;
-    line-height: 146.69%;
     color: #f3fcff;
     background-color: #455a64;
     border-radius: 6px;
-    text-decoration: none;
 }
-.learnmore img {
+.more-content__icon {
     padding: 0.5em;
 }
-.learnmore a:nth-child(3) {
-    font-weight: 700;
-    line-height: 146.69%;
-    text-decoration: none;
-    color: #455a64;
-}
-.addinfo {
+
+.intro-content__add {
     display: flex;
 }
-.addinfo p {
+.intro-content__text {
     margin: 2em 0.5em;
-    font-style: normal;
-    font-weight: 700;
     font-size: 0.8em;
-    line-height: 146.69%;
-    color: #455a64;
 }
-.info-card {
+
+.nav {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.8em;
+    flex-wrap: wrap;
+}
+.nav__item {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+
+.nav__img {
+    margin-left: 0.4em;
+    margin-bottom: 0.4em;
+}
+#pricing {
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+.nav__item_special {
+    border: 3px solid #fe9563;
+    border-radius: 5px;
+    padding: 0.3em;
+}
+
+.main__info-card {
     display: grid;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 0.2fr;
     grid-template-columns: 7.9% 1fr 1fr 1fr 7.9%;
     flex-wrap: wrap;
     gap: 2.3vw;
 }
-.info-card article {
-    max-width: 25vw;
-    min-height: 25vh;
+
+/*!will probably reuse */
+.info-card__background {
     background: linear-gradient(300.2deg, #f5f2eb 1.26%, #f7e6cb 100.49%);
     box-shadow: 5px 5px 13px #dd8762;
     border-radius: 3.5vh;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 146.7%;
+}
+.info-card__item {
+    max-width: 25vw;
+    min-height: 25vh;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #535359;
 }
 
-.info-card article:first-child {
+.main__info-card article:first-child {
     grid-row: 2/3;
     grid-column: 2/3;
 }
-.info-card article:nth-child(2) {
+.main__info-card article:nth-child(2) {
     grid-row: 2/3;
     grid-column: 3/4;
 }
-.info-card article:last-child {
+.main__info-card article:last-child {
     grid-row: 2/3;
     grid-column: 4/5;
 }
-.info-card article img {
+.info-card__img {
     margin-top: 4vh;
 }
-.minititle {
+.info-card__title {
     font-weight: 700;
 }
-.card-text {
+.info-card__text {
     padding: 0 3vw 3vh 3vw;
+}
+.article-container {
+    margin-left: 12.6vw;
+    margin-right: 14.3vw;
+}
+.gen-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5em;
+    margin-bottom: 3vh;
+}
+.gen-info__art {
+    max-width: 30vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+.gen-info__text-block {
+    align-self: center;
+}
+.cards-container {
+    margin-left: 7.9%;
+    margin-right: 7.9%;
+}
+.article-container_in {
+    margin-right: 6.4vw;
+    margin-left: 4.7vw;
+    margin-bottom: 0;
+}
+.main__text-block_flex {
+    display: grid;
+    grid-template-columns: 3.96vw 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5em;
+    padding-right: 8.8vw;
+    margin-top: 1em;
+}
+.main__text-block_flex div p {
+    margin: 0;
+}
+
+.cards_container__img {
+    align-self: flex-start;
+}
+
+#gridicon1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+#gridicon2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+#gridicon3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#gridtext1 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#gridtext2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#gridtext3 {
+    grid-row: 3/4;
+    grid-column: 2/3;
 }

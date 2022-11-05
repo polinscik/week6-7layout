@@ -16,94 +16,218 @@
     </head>
     <body>
         <header>
-            <div class="header__back">
+            <div class="header">
                 <img
-                    class="worldimg"
+                    class="header__background image"
                     src="/assets/images/greymap.svg"
                     alt="world map"
                 />
-                <div class="frontpage">
-                    <section>
-                        <h1>
+                <div class="header__intro intro-page">
+                    <section class="intro-page__content intro-content">
+                        <h1 class="text_large intro-content__text_large">
                             Share text, voice, photos, videos and GIFs files for
                             free
                         </h1>
-                        <p>
+                        <p class="text_regular intro-content__text_regular">
                             Feugiat primis a ligula undo auctor mauris auctor
                             laoreet and pretium augue an egestas cubilia
                         </p>
-                        <div class="learnmore">
-                            <a href="...">Learn&nbspMore</a>
+                        <div class="intro-content__more more-content">
+                            <a
+                                class="more-content__link more-content__link_btn"
+                                href="..."
+                                >Learn&nbspMore</a
+                            >
                             <img
+                                class="more-content__icon"
                                 src="/assets/images/playicon.svg"
                                 alt="play button"
                             />
-                            <a href="...">See OLMO in Action</a>
+                            <a
+                                class="intro-page__text more-content__link"
+                                href="..."
+                                >See OLMO in Action</a
+                            >
                         </div>
-                        <div class="addinfo">
-                            <p>14 days free trial</p>
+                        <div class="intro-content__add">
+                            <p class="intro-page__text intro-content__text">
+                                14 days free trial
+                            </p>
                             <img src="/assets/images/dividersign.svg" alt="|" />
-                            <p>No credit card</p>
+                            <p class="intro-page__text intro-content__text">
+                                No credit card
+                            </p>
                         </div>
                     </section>
-                    <img src="/assets/images/frontart.svg" alt="art" />
+                    <img
+                        class="intro-page__art image"
+                        src="/assets/images/frontart.svg"
+                        alt="art"
+                    />
                 </div>
-                <img src="/assets/images/logo.svg" alt="logo" />
-                <nav>
-                    <a href="...">Home</a>
-                    <a href="..."
+                <img
+                    class="header__logo"
+                    src="/assets/images/logo.svg"
+                    alt="logo"
+                />
+                <nav class="nav">
+                    <a class="nav__item" href="...">Home</a>
+                    <a class="nav__img" href="..."
                         ><img src="/assets/images/triangle.svg" alt="see more"
                     /></a>
-                    <a href="...">About</a>
-                    <a href="..."
+                    <a class="nav__item" href="...">About</a>
+                    <a class="nav__img" href="..."
                         ><img src="/assets/images/triangle.svg" alt="see more"
                     /></a>
-                    <a href="...">About</a>
-                    <a href="...">
+                    <a class="nav__item" href="...">About</a>
+                    <a class="nav__img" href="...">
                         <img src="/assets/images/triangle.svg" alt="see more"
                     /></a>
-                    <a href="...">Auth page</a>
-                    <a href="...">
+                    <a class="nav__item" href="...">Auth page</a>
+                    <a class="nav__img" href="...">
                         <img src="/assets/images/triangle.svg" alt="see more"
                     /></a>
-                    <a href="...">Features</a>
-                    <a id="pricing" href="...">Pricing</a>
-                    <a href="...">Get Started</a>
+                    <a class="nav__item" href="...">Features</a>
+                    <a class="nav__item" id="pricing" href="...">Pricing</a>
+                    <a class="nav__item nav__item_special" href="..."
+                        >Get Started</a
+                    >
                 </nav>
             </div>
         </header>
-        <main>
-            <div class="info-card">
-                <article>
-                    <img src="/assets/images/idealight.svg" alt="idea sign" />
-                    <p class="minititle">Quick Access</p>
-                    <p class="card-text">
+        <main class="main">
+            <div class="main__info-card info-card">
+                <article
+                    class="info-card__background info-card__item text_regular"
+                >
+                    <img
+                        class="info-card__img"
+                        src="/assets/images/idealight.svg"
+                        alt="idea sign"
+                    />
+                    <p class="info-card__title">Quick Access</p>
+                    <p class="info-card__text">
                         Feugiat primis ultrice a semper lacus cursus feugiat a
                         primis ultrice a ligula risus auctor
                     </p>
                 </article>
-                <article>
+                <article
+                    class="info-card__background info-card__item text_regular"
+                >
                     <img
+                        class="info-card__img"
                         src="/assets/images/windowicon.svg"
                         alt="window icon"
                     />
-                    <p class="minititle">Cross-Platform</p>
-                    <p class="card-text">
+                    <p class="info-card__title">Cross-Platform</p>
+                    <p class="info-card__text">
                         Feugiat primis ultrice a semper lacus cursus feugiat a
                         primis ultrice a ligula risus auctor
                     </p>
                 </article>
-                <article>
+                <article
+                    class="info-card__background info-card__item text_regular"
+                >
                     <img
+                        class="info-card__img"
                         src="/assets/images/sidewaysarrows.svg"
                         alt="sideways arrows icon"
                     />
-                    <p class="minititle">Easy Integration</p>
-                    <p class="card-text">
+                    <p class="info-card__title">Easy Integration</p>
+                    <p class="info-card__text">
                         Feugiat primis ultrice a semper lacus cursus feugiat a
                         primis ultrice a ligula risus auctor
                     </p>
                 </article>
+            </div>
+
+            <div class="article-container">
+                <div class="gen-info">
+                    <img
+                        class="image gen-info__art"
+                        src="/assets/images/gen-info-img.svg"
+                        alt="social media user art"
+                    />
+                    <article class="gen-info__text-block">
+                        <p class="text_large">
+                            Share files, media, and locations
+                        </p>
+                        <p class="text_regular">
+                            Quaerat sodales sapien euismod blandit purus a purus
+                            ipsum primis in cubilia laoreet augue luctus magna
+                            dolor luctus and egestas sapien egestas vitae nemo
+                            volute
+                        </p>
+                        <p class="text_regular">
+                            Quaerat sodales sapien euismod blandit at vitae
+                            ipsum primis undo and cubilia laoreet augue and
+                            luctus magna dolor luctus at egestas sapien vitae
+                            nemo egestas volute and turpis dolores aliquam
+                            quaerat sodales a sapien
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="cards-container info-card__background">
+                <div class="gen-info article-container_in">
+                    <article class="gen-info__text-block main__text-block_flex">
+                        <img
+                            class="cards_container__img image"
+                            id="gridicon1"
+                            src="/assets/images/cloudicon.svg"
+                            alt="message icon"
+                        />
+                        <div id="gridtext1">
+                            <p class="text_regular info-card__title">
+                                Text, Voice & Video Calls
+                            </p>
+                            <p class="text_regular">
+                                Ligula risus auctor tempus dolor feugiat undo
+                                lacinia purus lipsum quaerat primis ultrice
+                                tellus and viverra purus suscipit
+                            </p>
+                        </div>
+
+                        <img
+                            class="cards_container__img image"
+                            id="gridicon2"
+                            src="/assets/images/smileicon.svg"
+                            alt="smile icon"
+                        />
+                        <div id="gridtext2">
+                            <p class="text_regular info-card__title">
+                                Stickers, Emojis, Themes
+                            </p>
+                            <p class="text_regular">
+                                Ligula risus auctor tempus dolor feugiat undo
+                                lacinia purus lipsum quaerat primis ultrice
+                                tellus and viverra purus suscipit
+                            </p>
+                        </div>
+
+                        <img
+                            class="cards_container__img image"
+                            id="gridicon3"
+                            src="/assets/images/shieldicon.svg"
+                            alt="shield icon"
+                        />
+                        <div id="gridtext3">
+                            <p class="text_regular info-card__title">
+                                Spam Protection
+                            </p>
+                            <p class="text_regular">
+                                Ligula risus auctor tempus dolor feugiat undo
+                                lacinia purus lipsum quaerat primis ultrice
+                                tellus and viverra purus suscipit
+                            </p>
+                        </div>
+                    </article>
+                    <img
+                        class="gen-info__art"
+                        src="/assets/images/info-card2.svg"
+                        alt="social media user art"
+                    />
+                </div>
             </div>
         </main>
         <footer></footer>
